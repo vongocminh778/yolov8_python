@@ -26,7 +26,7 @@ def detection():
     global shared_variable, terminate_flag
 
     # Initialize YOLOv8 model
-    model = YOLO("./models/model.pt")
+    model = YOLO("./models/model_n.pt")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(device)
 
